@@ -1,5 +1,10 @@
 .support-form {
-	@include adaptiveValue("padding-top", 40, 20);
+	// @include adaptiveValue("padding-top", 40, 20);
+	border-radius: toRem(12);
+	border: toRem(1) solid var(--dark-color-4);
+	background: var(--dark-color-2);
+	padding: toRem(50);
+	max-width: toRem(976);
 	// .support-form__items
 	&__items {
 		display: flex;
