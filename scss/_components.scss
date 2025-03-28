@@ -82,6 +82,13 @@
 			}
 		}
 	}
+	@media (max-width: toEm(569.99)) {
+		&:not(.button--icon) {
+			span {
+				justify-content: center;
+			}
+		}
+	}
 	&--icon {
 		padding: toRem(17) toRem(20);
 		@media (min-width: toEm(1630)) {
