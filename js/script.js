@@ -348,7 +348,7 @@ function faqBuild() {
 }
 // Plans
 async function getPlans(activeType) {
-	const response = await fetch('../json/plans.json')
+	const response = await fetch('/srteamVibe/json/plans.json')
 	if (response.ok) {
 		const data = await response.json()
 		plansShow(data, activeType)
