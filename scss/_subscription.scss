@@ -1,0 +1,53 @@
+.subscription-page {
+    @include adaptiveValue("padding-top", 100, 40);
+
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 135, 80);
+}
+.table-plan {
+		&__content {
+            overflow-x: auto;
+            width: 100%;
+		}
+}
+.grid-table {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+
+    border: toRem(1) solid var(--dark-color-4);
+    min-width: 800px;
+    border-radius: toRem(15);
+    overflow: hidden;
+
+}
+.cell {
+
+    border: toRem(0.5) solid var(--dark-color-4);
+    @include adaptiveValue("padding", 30, 10);
+    @include adaptiveValue("font-size", 18, 12);
+
+    &--header{
+        // display: flex;
+        // align-items: center;
+        background-color: var(--dark-color-2);
+
+        color: var(--white-color);
+        @include adaptiveValue("font-size", 20, 16);
+        font-weight: 600;
+        line-height: 1.5; /* 30px */
+
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.badge {
+    font-size: toRem(14);
+    font-weight: 500;
+
+    border-radius: toRem(2);
+    background: var(--red-color);
+    padding: toRem(4) toRem(10);
+    margin-left: toRem(8);
+}

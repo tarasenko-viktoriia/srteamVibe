@@ -494,9 +494,12 @@
 	}
 }
 .switcher {
+	display: flex;
+	flex-wrap: nowrap;
 	border-radius: toRem(10);
 	padding: toRem(10);
 	border: toRem(1) solid var(--dark-color-4);
+	background: var(--dark-color-2);
 	// .switcher__item
 	&__item {
 		transition: all 0.5s;
