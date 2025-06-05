@@ -3441,6 +3441,30 @@ textarea.input {
   }
 }
 
+.table-plan__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 75em) {
+  .table-plan__container {
+    gap: 5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 75em) {
+  .table-plan__container {
+    gap: clamp( 2.1875rem , 1.1647727273rem  +  5.1136363636vw , 5rem );
+  }
+}
+@media (max-width: 20em) {
+  .table-plan__container {
+    gap: 2.1875rem;
+  }
+}
 .table-plan__content {
   overflow-x: auto;
   width: 100%;
